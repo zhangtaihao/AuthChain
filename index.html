@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>What is AuthChain? - AuthChain</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700|Neuton:700" type="text/css" />
+  <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body id="home">
+  <div class="page-wrapper">
+    <div class="page-header page-region clearfix">
+      <h1 id="site-title">
+        AuthChain
+      </h1>
+      <div id="site-subtitle">
+        Chained authentication protocol for the web
+      </div>
+      <ul class="navigation" id="main-menu">
+        <li class="active"><a href="index.html">What</a></li>
+        <li><a href="how.html">How</a></li>
+        <li><a href="why.html">Why</a></li>
+        <li><a href="where.html">Where</a></li>
+      </ul>
+    </div>
+    <div class="page-border"></div>
+    <div class="page-body page-region">
+      <h1 class="page-title">What is AuthChain?</h1>
+      <div class="page-content">
+        <p>
+          AuthChain is an extension to the basic HTTP scheme for browsing websites. It works on top of the default HTTP behavior to provide extra user agent authentication methods. It is designed to degrade gracefully if a user agent does not support the AuthChain protocol extension.
+        </p>
+        <p>
+          AuthChain aims to provide a unified protocol for negotiating the following types of authentication methods:
+        </p>
+        <ul>
+          <li>Simple page-based authentication (e.g. HTTP POST forms)</li>
+          <li>HTTP Authorization (HTTP 401)</li>
+          <li>Non-standard authentication scheme</li>
+        </ul>
+        <p>
+          Each of the above potentially has different underlying transport mechanisms, handshake protocols, failover handling procedures, user agent compatibility matrices, design limitations, and usability issues. AuthChain does not try to account for discrepancies between them; it outlines a common HTTP-based interface between a user agent and a server-side authentication service in a web-browsing context.
+        </p>
+      </div>
+    </div>
+    <div class="page-footer page-region clearfix">
+      <div class="by">
+        Authored by Jason Zhang 2012.
+      </div>
+      <div class="license">
+        <div class="license-image">
+          <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/2.0/88x31.png" /></a>
+        </div>
+        <div class="license-text">
+          This work is licensed under a <br />
+          <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/">Creative Commons Attribution-ShareAlike 2.0 Generic License</a>.
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

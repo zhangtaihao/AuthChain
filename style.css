@@ -1,0 +1,208 @@
+@charset "utf-8";
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* http://perishablepress.com/press/2008/02/05/lessons-learned-concerning-the-clearfix-css-hack/ */
+/* slightly enhanced, universal clearfix hack */
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+/* Site CSS begins here. */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 100.01%;
+  padding: 10px;
+}
+.page-wrapper {
+  font-size: 0.85em;
+  line-height: 1.4;
+}
+.page-region {
+  max-width: 960px;
+  margin: auto;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Neuton', sans-serif;
+  font-weight: bold;
+}
+h1 {
+  font-size: 200%;
+}
+h2 {
+  font-size: 150%;
+}
+h3 {
+  font-size: 120%;
+}
+h4 {
+  font-size: 100%;
+}
+h5 {
+  font-size: 89%;
+}
+h6 {
+  font-size: 60%;
+}
+h1, h2, h3, h4, h5, h6, p {
+  margin: 1em 0;
+}
+
+a {
+  text-decoration: none;
+}
+a:link {
+  color: #58f;
+}
+a:visited {
+  color: #92a;
+}
+a:hover {
+  text-decoration: underline;
+  color: #25f;
+}
+a:active {
+  text-decoration: underline;
+  color: #d46;
+}
+
+/** Page header. */
+
+.page-header {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+#site-title {
+  float: left;
+  font-size: 2.75em;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0.25em;
+}
+#site-subtitle {
+  float: left;
+  clear: left;
+  font-size: 1.125em;
+  font-style: italic;
+}
+ul#main-menu {
+  float: right;
+  margin-top: -1.875em;
+  margin-right: 1em;
+}
+ul#main-menu li {
+  font-size: 1.35em;
+  font-style: italic;
+  letter-spacing: 0.18em;
+  list-style: none;
+  float: left;
+  margin-left: 4em;
+  text-align: right;
+}
+ul#main-menu li a {
+  text-decoration: none;
+}
+ul#main-menu li.active a {
+  font-weight: bold;
+  color: #000;
+}
+
+.page-border {
+  border-bottom: 3px solid #abd;
+  margin: 2em auto;
+}
+
+/** Page content. */
+
+.page-content ul, .page-content ol {
+  margin-left: 2em;
+}
+.page-content ul li {
+  list-style-type: square;
+}
+.page-content ol li {
+  list-style-type: decimal;
+}
+
+/** Page footer. */
+
+.page-footer {
+  font-size: 89%;
+  color: #888;
+  margin-top: 3em;
+  border-top: 1px solid #ccc;
+  padding-top: 2em;
+}
+.page-footer .by {
+  float: left;
+  line-height: 2;
+}
+.page-footer .by .author {
+  font-style: italic;
+}
+.page-footer .license {
+  float: right;
+  text-align: right;
+}
+.page-footer .license .license-image, .page-footer .license .license-text {
+  float: right;
+  margin-left: 1em;
+}
